@@ -23,7 +23,6 @@ button{
 
   
 .container {
-    flex: 1;
     background-color: #5fb8b8; 
     padding: 20px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
@@ -39,9 +38,15 @@ button{
     margin-bottom: 20px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
 }
-  
-#taskList {
-    list-style-type: none;
+
+.listatarea{
+    text-align: center;
+}
+
+.listatarea ol{
+    list-style: decimal;
+    list-style-position: inside;
+    padding-left: 20px;
     padding: 0;
 }
   
@@ -52,6 +57,5 @@ footer.author-info {
     padding: 20px;
     margin-top: auto; 
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(175, 1, 1, 0.1); 
+    box-shadow: 0px 4px 8px rgba(175, 1, 1, 0.1);
 }
-  

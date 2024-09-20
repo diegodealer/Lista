@@ -7,19 +7,28 @@
     <link rel="stylesheet" href="main.css">
     
     <body>
+
+        <header>
+            <div class="Logo">Logo</div>
+        </header>
+
         <div class="container">
         <header><h1>Lista de cosas por hacer</h1></header>
         <input type="text" id="taskInput" placeholder="Escribe una tarea...">
         <button onclick="addTask()">Añadir</button>
         <button class="delete-btn" onclick="clearTasks()">Borrar</button>
-        
-        <ul id="taskList"></ul>
+        </div>
+
+        <div class ="listatarea">
+        <ol id="taskList">
+            
+        </ol>
         </div>
 
         <footer class="author-info">
             Diego Emilio Rodriguez Falcon TID31M
         </footer>
 
-    <script src="Script.js"></script>
+        <script src="Script.js"></script>
     </body>
 </html>

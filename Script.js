@@ -5,7 +5,7 @@ function addTask() {
     if (taskInput.value.trim() !== "") {
         let li = document.createElement("li");
         li.textContent = taskInput.value;
-        taskList.appendChild(li);
+        document.getElementById("taskList").appendChild(li);
         taskInput.value = "";
     }
 }
