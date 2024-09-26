@@ -59,5 +59,8 @@ function clearSelectedTasks() {
         if (checkbox.checked) {
             taskList.removeChild(tasks[i]); 
         }
+        else {
+            alert("seleccione algo de la lista");
+        }
     }
 }
