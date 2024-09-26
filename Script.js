@@ -45,6 +45,9 @@ function addTask() {
         tasklist.appendChild(li);
         taskInput.value = "";
     }
+    else if (taskInput.value.trim() == "") {
+        alert("No ha agregado una tarea");
+    }
 }
 
 function clearSelectedTasks() {
