@@ -50,17 +50,31 @@ function addTask() {
     }
 }
 
+function TareaCompleta() {
+    let taskList = document.getElementById("taskList");
+    let CompleteTask = document.getElementById("CompleteTask");
+    let tasks = taskList.getElementsByTagName("li");
+
+    for (let i = tasks.length - 1; i >= 0; i--) {
+        let checkbox = tasks[i].getElementsByTagName("input")[0]; 
+        if (checkbox.checked) {
+            CompleteTask.appendChild(tasks[i]); 
+            checkbox.disabled = true;
+        }
+    }
+}
+
 function clearSelectedTasks() {
     let taskList = document.getElementById("taskList");
     let tasks = taskList.getElementsByTagName("li");
+
 
     for (let i = tasks.length - 1; i >= 0; i--) {
         let checkbox = tasks[i].getElementsByTagName("input")[0]; 
         if (checkbox.checked) {
             taskList.removeChild(tasks[i]); 
         }
-        else {
-            alert("seleccione algo de la lista");
-        }
     }
+
 }
+
