@@ -62,6 +62,16 @@ function TareaCompleta() {
             checkbox.disabled = true;
         }
     }
+
+    verificarListaVacia(CompleteTask);
+}
+
+function verificarListaVacia(lista) {
+    if (lista.children.length === 0) {
+        lista.style.display = 'none';
+    } else {
+        lista.style.display = 'block';
+    }
 }
 
 function clearSelectedTasks() {
