@@ -49,7 +49,7 @@ function addTask() {
         alert("No ha agregado una tarea");
     }
 }
-
+// comentario de prueba 
 function TareaCompleta() {
     let taskList = document.getElementById("taskList");
     let CompleteTask = document.getElementById("CompleteTask");
